@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: beige;
+}
+header{
+  height: 100px;
+  background-color: rgb(238, 120, 238);
+  display: flex;
+}
+h1 {
+  margin: auto;
+  color: beige;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.wrapper {
+  margin: auto;
+  display: grid;
+  padding-top: 50px;
+  grid-template-columns: repeat(3, 30%);
+  max-width: 80vw;
+  justify-content: center;
+  align-content: center;
+  gap: 2%;
+}
+p {
+  padding: 0 12px 5px;
+  text-align: center;
+  font-weight: 200;
+}
+.evaluation {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.cat_card {
+  border: 1px solid rgba(92, 90, 90, 0.533);
+  border-radius: 5px;
+  min-width: 200px;
+  box-shadow: 0 0 5px 0 rgba(92, 90, 90, 0.533);
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  text-align: center;
+  gap: 5px;
+}
+.star {
+  width: 15px;
+  height: 15px;
+}
+.rating {
+  height: 20px;
+  display: flex;
+}
+.favorite {
+  width: 40px;
+  height: 40px;
+}
+.picture {
+  margin: auto;
+  width: 88%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 4px 0 rgba(171, 7, 231, 0.533);
+  border-radius: 50%;
+}
+.picture:hover {
+  width: 100%
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    margin: auto;
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: repeat(2, 43%);
+    max-width: 80vw;
+    justify-content: center;
+    align-content: center;
+    gap: 2%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    grid-template-columns: 400px;
+    max-width: 80vw;
+    justify-content: center;
+    align-content: center;
+    gap: 2%;
+  }
+}
